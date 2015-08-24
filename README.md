@@ -21,6 +21,7 @@ Each channel accepts three inputs, and the maximum (positive) voltage among them
 |      1V |      3V |      2V |     3V |
 |      5V |      0V |      5V |     5V |
 |      5V |      8V |      5V |     8V |
+|     -5V |     -8V |      0V |     0V |
 |     -8V |     -3V |     -2V |     0V |
 
 Note that this module does nothing for negative voltages; they are treated as if they were 0V. For this reason alone, I don't recommend using this module for audio signals.
@@ -28,7 +29,7 @@ Note that this module does nothing for negative voltages; they are treated as if
 
 ## Construction
 
-This module was originally constructed to be milled from a single singled PCB, on an Othermill. As such, I've favored hand-solderable surface mount components, to limit the amount of through-hole drilling, and kept all trace gaps to no less than 1/64". The board design could probably be better optimized, before being sent to a commercial board manufacturer, but for home milling, it works quite well.
+This module is designed to be milled from a single singled PCB, on an Othermill, though it should also be relatively easy to etch by hand. As such, I've favored hand-solderable surface mount components, to limit the amount of through-hole drilling, and kept all trace gaps to no less than 1/64". The board design could probably be better optimized, before being sent to a commercial board manufacturer, but for home milling, it works quite well.
 
 Jacks are Erthenvar horizontal jacks. At time of writing, they come in packs of 50, and have nice heavy solder tabs.
 
