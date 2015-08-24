@@ -2,7 +2,7 @@
 
 There are a number of commercial eurorack-format synthesizer modules available that will work as a logical OR function. While they do a fine job combining multiple gate/trigger signals, typically they work by passing each input through a diode, resulting in the output being the maximum input level minus the the voltage drop across the diodes. Fine for gates and triggers, not so fine for combining control voltages.
 
-This module takes a similar approach to these passive modules, but exchanges the passive diodes for "ideal" diodes (i.e. an opamp and two diodes that conspire to ). The result is a module that precisely combines multiple CVs, and outputs the maximum value from the set.
+This module takes a similar approach to these passive modules, but exchanges the passive diodes for "ideal" diodes (i.e. an opamp and two diodes that conspire to behave like normal diodes, only with a magical 0V voltage drop). The result is a module that precisely combines multiple CVs, and outputs the maximum value from the set.
 
 ### Why would you want this?
 
