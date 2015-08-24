@@ -6,7 +6,10 @@ This module takes a similar approach to these passive modules, but exchanges the
 
 ### Why would you want this?
 
-@TODO
+* Combine several envelopes in a new way
+* Combine gate / trigger signals without losing 1V-2V in the process
+* Use a constant voltage source to set a lower bound on another CV
+* Something else!
 
 ## Behavior
 
@@ -22,13 +25,15 @@ Each channel accepts three inputs, and the maximum (positive) voltage among them
 
 Note that this module does nothing for negative voltages; they are treated as if they were 0V. For this reason alone, I don't recommend using this module for audio signals.
 
-I used TL074 opamps here, with fine results. You could probably get a wider range of acceptable voltages with a rail-to-rail opamp, but if you're seeing a lot of 11.5V signals floating around your synthesizer, you may have other issues to work around, no?
-
 
 ## Construction
 
-This module was originally constructed to be milled from a single singled PCB. As such, I've favored hand-solderable surface mount components, to limit the amount of through-hole drilling.
+This module was originally constructed to be milled from a single singled PCB, on an Othermill. As such, I've favored hand-solderable surface mount components, to limit the amount of through-hole drilling, and kept all trace gaps to no less than 1/64". The board design could probably be better optimized, before being sent to a commercial board manufacturer, but for home milling, it works quite well.
 
-Jacks are Erthenvar horizontal jacks.
+Jacks are Erthenvar horizontal jacks. At time of writing, they come in packs of 50, and have nice heavy solder tabs.
+
+Pads for protection diodes are included, but to use these, you'll need to cut /remove the traces across them. I included them and then didn't bother with them, in favor of a keyed power connector.
+
+There are no extra power smoothing capacitors on this module, just some 100nF decoupling capacitors around the op amps. If your power distribution board doesn't already contain a few 100µF capacitors nearby, you might find this module oscillating.
 
 Total module depth is about 1.7" (~44mm).
